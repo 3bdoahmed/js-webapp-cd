@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: webapp-deploy
+  name: webapp-deploy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: webapp-deploy
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: webapp-deploy
+    spec:
+      containers:
+      - image: abdelrahman678/webapp:v2
+        name: wwebapp
+        resources: {}
+status: {}
