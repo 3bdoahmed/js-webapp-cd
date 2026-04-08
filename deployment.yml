@@ -18,7 +18,7 @@ spec:
         app: webapp-deploy
     spec:
       containers:
-      - image: abdelrahman678/webapp:v2
+        image: abdelrahman678/web-js-app:v17
         name: wwebapp
         resources: {}
 status: {}
